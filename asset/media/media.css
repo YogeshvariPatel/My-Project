@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .services .icon-box::before {
+    bottom: 60%;
+  }
+}
+
+@media (min-width:576px) {
+  .navbar-nav {
+    position: unset !important;
+    justify-content: end;
+  }
+}
