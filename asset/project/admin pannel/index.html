@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="asset/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="asset/css/responsive.css">
+</head>
+
+<body>
+    <!--header start-->
+    <header class="d-flex flex-wrap justify-between align-center">
+        <div class="bar d-flex align-center">
+            <a href="javascript:void(0);"><i class="fa-solid fa-bars"></i></a>
+
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+
+
+        </div>
+
+
+        <div class="other row align-center ">
+            <i class="bx bx-category-alt"></i>
+            <i class="bx bx-shopping-bag"></i>
+            <i class="bx bx-fullscreen"></i>
+            <i class="bx bx-moon"></i>
+            <i class="bx bx-bell"></i>
+
+            <div class="profile d-flex">
+                <div class="img">
+                    <img src="asset/images/avatar-1.jpg" alt="">
+                </div>
+                <div class="name">
+                    <p class="align-content-center">Anna Adames</p>
+                    <p class="align-content-center">Founder</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <button id="top"><i class="fa-solid fa-arrow-up fa-2xs"></i></button>
+
+
+    
+
+	<div class="theam-switcher">
+		<button id="setting"><i class="fa-solid fa-gear"></i></button>
+       
+       
+	</div>
+    <!-- header end -->
+    <div class="sub-header border">
+        <div class="row justify-between">
+            <div class="w-6">
+                <h4>ANALYTICS</h4>
+            </div>
+            <div class="w-6">
+                <div class="last">
+                    Dashboards<i class="fa-light fa-angle-right"></i>Analytics
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- aside start -->
+    <aside>
+        <div class="logo justify-center d-flex">
+            <img src="asset/images/logo-light.png" alt="" width="100px">
+        </div>
+        <div class="side-bar">
+            <h6>Menu</h6>
+            <h3 class="arrow"><a href="javascript:void(0);"><i class="fa-duotone fa-earth-americas"></i></a>Dashbord </h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">calander</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Chart</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Ecommerce</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">email</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Projects</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">task</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">CRM</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Crypto</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">invoice</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">support tikicts</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">NFT marketplace</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">file manager</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">TO DO</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Job</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">API keys</a></li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"> <i class="fa-solid fa-braille"></i></a> Apps</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">Crypto</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">invoice</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">support tikicts</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">NFT marketplace</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">file manager</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">TO DO</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Job</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">API keys</a></li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"> <i class="fa-solid fa-display"></i></a> Layouts</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">horizontl</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">datached</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">two colum</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">hoverd</a></li>
+            </ul>
+            <h6>Pages</h6>
+            <h3 class="arrow"> <a href="javascript:void(0);"> <i class="fa-light fa-circle-user"></i></a> Authentications</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">sign up</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">password reset</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">password create</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">lock screen</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">log out</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">sucsses message</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">two step verification</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">errors</a></li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-light fa-file-lines"></i></a> Pages</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">starter</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">profile</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">team</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">time line</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Faqs</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">pricing</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">gallary</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">maintance</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">comming soon</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">site map</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">search results</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">privacy polices</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">terms condition</a></li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-light fa-plane-up"></i> </a> Landing</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">One page</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">NFT landding</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Job</a></li>
+            </ul>
+            <h6>Components</h6>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-light fa-pen-ruler"></i></a> Base UI</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">Alerts</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Badges</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Buttons</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Colours</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Cards</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Corousel</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Dropdown</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Grid</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Images</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Taps</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Accordian</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Models</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Offcanvas</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Placeholders</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Progress</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Notification</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Media Objects</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Embadde Video</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Trypogrphy</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Lists</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Links</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">General</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Rebbons</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Utilities</a></li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"> <i class="fa-regular fa-layer-group"></i></a>Advanced UI</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">Sweet Alerts</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Nestable list</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Scrollbar</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Animation</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Tool</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Swipper slider</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Rating</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">scrollspy</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">Highlight</a></li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-light fa-indent"></i></a> Widgets</h3>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-brands fa-wpforms"></i></a> Form</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Basic Element</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Form select</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Checkbox</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Pikers</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Input</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Mask</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Addvanced</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Range</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Validation</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Vizard</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>File upload</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Select2</li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-light fa-table-cells-large"></i></a> Table</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Basic table</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Grid</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>List</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Final table</li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"> <i class="fa-light fa-chart-pie"></i></a> Chart</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Grid</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>List</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Final table</li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"> <i class="fa-brands fa-accessible-icon"></i></a> Icon</h3>
+            <ul class="dropdown">
+
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Grid</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>List</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Final table</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Addvanced</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Range</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Validation</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Vizard</li>
+            </ul>
+            <h3 class="arrow"> <a href="javascript:void(0);"></a><i class="fa-light fa-location-dot"></i></a> Maps</h3>
+            <ul class="dropdown">
+
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Grid</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>List</li>
+                <li class="sub-menu"><a href="javascript:void(0);"></a>Final table</li>
+            </ul>
+            <h3 class="arrow"><a href="javascript:void(0);"> <i class="fa-light fa-share-nodes"></i></a> Multi level</h3>
+            <ul class="dropdown">
+                <li class="sub-menu"><a href="javascript:void(0);">list1</a></li>
+                <li class="sub-menu"><a href="javascript:void(0);">list2</a></li>
+            </ul>
+        </div>
+    </aside>
+   
+    <!-- aside end -->
+
+
+
+    <!-- page area start -->
+    <div class="page-area">
+        <div class="card1 border">
+            <div class="card-header row justify-between">
+                <div class="card-title d-flex">
+                    <div class="svg-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-alert-triangle text-warning me-2 icon-sm">
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                            </path>
+                            <line x1="12" y1="9" x2="12" y2="13"></line>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h4>Your free trial expired in <b>17</b> days.</h4>
+                </div>
+                <div class="card-title2">
+                    <a href="javascript:void(0);"><b><u>
+                                Upgrade</u></b></a>
+                </div>
+            </div>
+            <div class="card-body d-flex">
+                <div class="w-6 text">
+                    <h4>Upgrade your plan from a Free trial, to ‘Premium Plan’ </h4>
+                    <button>Upgrade Account!</button>
+                </div>
+                <div class="w-6 p-relative">
+
+                    <img src="asset/images/user-illustarator-2.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="card2 border">
+            <div class="card-header row justify-between">
+                <div class="card-title">
+                    <h4>Live Users By Country</h4>
+                </div>
+                <div class="card-title2">
+                    <button>Export</button>
+                </div>
+            </div>
+
+            <div class="map">
+                <map name="continents_map">
+                    <area shape="circle" coords="300,201,10" href="#australia">
+                  </map>
+                  <figure>
+                    <img usemap="#continents_map" src=https://bit.ly/2bgFrvL />
+                  </figure>
+            </div>
+
+            <table stlye="width:100%">
+                <tr>
+                    <th>Duration</th>
+                    <th>Sessions</th>
+                    <th>Views</th>
+                </tr>
+                <tr>
+                    <td>0-30</td>
+                    <td>2,250</td>
+                    <td>4,250</td>
+                </tr>
+                <tr>
+                    <td>31-60</td>
+                    <td>1,501</td>
+                    <td>2,250</td>
+                </tr>
+                <tr>
+                    <td>61-120</td>
+                    <td>750</td>
+                    <td>1600</td>
+                </tr>
+                <tr>
+                    <td>121-240</td>
+                    <td>540</td>
+                    <td>1,040</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="barchart border ">
+            <div class="card-header row justify-between">
+                <div class="card-title">
+                    <h4>Sessions by Countries</h4>
+                </div>
+                <div class="card-title2">
+                    <button>All</button>
+                    <button>1M</button>
+                    <button>6M</button>
+                </div>
+            </div>
+            <div class="bar-chart">
+                <div id="bar"></div>
+            </div>
+
+        </div>
+        <div class="card4 border">
+            <div class="row ">
+                <div class="w-6">
+                    <p>Users</p>
+                    <h2>28.05k</h2>
+                    <p><span class="up">16.24%</span> vs. previous month</p>
+                </div>
+                <div class="w-6 p-relative">
+                    <div class="svgbg">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-users">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card5 border">
+            <div class="row ">
+                <div class="w-6">
+                    <p>Sessions</p>
+                    <h2>97.66k</h2>
+                    <p><span class="up1">16.24%</span> vs. previous month</p>
+                </div>
+                <div class="w-6 p-relative">
+                    <div class="svgbg1">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-activity">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card6 border ">
+            <div class="row ">
+                <div class="w-6">
+                    <p>Avg. Visit Duration</p>
+                    <h2>3m 66sec</h2>
+                    <p><span class="up1">16.24%</span> vs. previous month</p>
+                </div>
+                <div class="w-6 p-relative">
+                    <div class="svgbg2">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-clock">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card7 border">
+            <div class="row ">
+                <div class="w-6">
+                    <p>Bounce Rate</p>
+                    <h2>33.48%</h2>
+                    <p><span class="up">16.24%</span> vs. previous month</p>
+                </div>
+                <div class="w-6 p-relative">
+                    <div class="svgbg3">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Audiences-Metrics8 border ">
+            <div class="card-header row justify-between">
+                <div class="card-title">
+                    <h4>Audiences Metrics</h4>
+                </div>
+                <div class="card-title2">
+                    <button>All</button>
+                    <button>1M</button>
+                    <button>6M</button>
+                    <button>1Y</button>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="w-4 border">
+                  <div class="all">
+                    <div class="second d-flex justify-center">
+                        <h4>854</h4>
+                        <span>49%</span>
+                    </div>
+                    <div class="third text-center">
+                        <p class="low"> Avg. Session</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-4 border">
+                    <div class="second d-flex  justify-center">
+                        <h4>1,278</h4>
+                        <span>60%</span>
+                    </div>
+                    <div class="third text-center">
+                        <p> Conversion Rate</p>
+                    </div>
+                </div>
+
+                <div class="w-4 border">
+                    <div class="second d-flex justify-center">
+                        <h4>3m 40sec </h4>
+                        <span>37%</span>
+                    </div>
+                    <div class="third text-center">
+                        <p>Avg. Session Duration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Audiences-Metrics8-chart">
+                <div id="Metrics8"></div>
+            </div>
+        </div>
+
+
+
+        <div class="card9 border">
+            <div class="card-header row justify-between">
+                <div class="card-title">
+                    <h4>Audiences Sessions by Country</h4>
+                </div>
+                <div class="card-title2">
+                    <span class="s"><b>SHORT BY:</b></span>
+                    <span class="s">Current week</span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div id="matric"></div>
+        </div>
+
+
+
+        <div class="pie border">
+            <div class="card-header d-flex  justify-between">
+                <div class="card-title">
+                    <h4>Users by Device</h4>
+                </div>
+                <div class="card-title2 ">
+                    <i class="fa-regular fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+
+            <div class="pie-chart ">
+                <div id="pie" ></div>
+            </div>
+
+            <table>
+                <tr>
+                    <td><i class="fa-solid fa-square fa-2xs" style="color: #4b38b3;"></i>Desktop Users</td>
+                    <td><i class="fa-light fa-user fa-2xs" style="color: #979ca5;"></i>78.56k</td>
+                    <td><i class="fa-solid fa-sort-up" style="color: #24db52;"></i>2.8%</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-square fa-2xs" style="color: #ffbe0b;"></i>Mobile Users</td>
+                    <td><i class="fa-light fa-user fa-2xs" style="color: #979ca5;"></i>102.05k</td>
+                    <td><i class="fa-solid fa-sort-up" style="color: #f06548;"></i>2.8%</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-square fa-2xs" style="color: #0555e1;"></i>Tablet Users</td>
+                    <td><i class="fa-light fa-user fa-2xs" style="color: #979ca5;"></i>42.89kk</td>
+                    <td><i class="fa-solid fa-sort-up" style="color:#f06548 ;"></i>2.8%</td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="card11 border ">
+            <div class="card-header row justify-between">
+                <div class="card-title">
+                    <h4>Sessions by Countries</h4>
+                </div>
+                <div class="card-title2">
+                    <button>Export Report</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="w-6">
+                        <h6>TOTAL REFERRALS PAGE...</h6>
+                        <h4>725,800</h4>
+                        <p>
+                            <span>15.72%</span>
+                            vs. previous month
+                        </p>
+                    </div>
+                    <div class="w-6">
+                        <img src="asset/images/illustrator-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="purple"></div>
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="red"></div>
+              </div> 
+
+            <table stlye="width:100%">
+                <tr>
+                    <td><a href="javascript:void(0);"><i class="fa-solid fa-circle fa-2xs" style="color: #4b38b3;"></i>www.google.com</a>
+                    </td>
+                    <td>24.58%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);"><i class="fa-solid fa-circle fa-2xs" style="color: #299cdb;"></i>www.youtube.com</a>
+                    </td>
+                    <td>17.51%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);"><i class="fa-solid fa-circle fa-2xs" style="color: #45CB85;"></i>www.meta.com</a>
+                    </td>
+                    <td>17.58%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);"><i class="fa-solid fa-circle fa-2xs" style="color: #ffbe0b;"></i>www.medium.com</a>
+                    </td>
+                    <td>23.05%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);"><i class="fa-solid fa-circle fa-2xs" style="color: #f06548;"></i>Other</a></td>
+                    <td>12.22%</td>
+                </tr>
+
+            </table>
+
+            <div class="card-footer">
+                <p>Show All</p>
+            </div>
+
+
+        </div>
+
+        <div class="card12 border ">
+            <div class="card-header d-flex  justify-between">
+                <div class="card-title">
+                    <h4>Top Pages</h4>
+                </div>
+                <div class="card-title2 ">
+                    <i class="fa-regular fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+
+            <table stlye="width:100%">
+                <tr>
+                    <th style="padding: 20px">Active Page</th>
+                    <th style="padding: 20px">Active</th>
+                    <th style="padding: 20px">Users</th>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/themesbrand/skote-25867</a></td>
+                    <td>99</td>
+                    <td>25.3%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/dashonic/chat-24518</a></td>
+                    <td>86</td>
+                    <td>22.7%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/skote/timeline-27391</a></td>
+                    <td>64</td>
+                    <td>18.7%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/themesbrand/minia-26441</a></td>
+                    <td>53</td>
+                    <td>14.2%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/dashon/dashboard-29873</a></td>
+                    <td>33</td>
+                    <td>12.6%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/doot/chats-29964</a></td>
+                    <td>20</td>
+                    <td>10.9%</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);">/minton/pages-29739</a></td>
+                    <td>10</td>
+                    <td>07.3%</td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+    <!-- page area end -->
+
+
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="w-6">
+                    <p>2023 © Velzon.</p>
+                    <img src="asset/images/person.svg" alt="">
+                </div>
+
+                <div class="w-6">
+                    <p class="p2">Design & Develop by Themesbrand</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- jquery -->
+    <script src="asset/js/jquery-3.7.0.min.js"></script>
+    <!-- apex chart  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="asset/js/chart.js"></script>
+    <script src="asset/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

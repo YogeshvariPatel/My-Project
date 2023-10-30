@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 1550px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -209,7 +209,7 @@ section {
 }
 
 .about .image {
-    background: url("../images/yogi 2.jpg") center center / cover no-repeat;
+    /* background: url("../images/yogi 2.jpg") center center / cover no-repeat; */
     min-height: 400px;
 }
 

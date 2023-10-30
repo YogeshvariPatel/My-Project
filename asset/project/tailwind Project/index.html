@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <!-- slick slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="asset/js/tailwind.config.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#fa7452',
+            seconary: '#ff7c5b',
+            theme: '#FFF4E2',
+          },
+          fontFamily: {
+            'jost': ['jost', 'sans-serif'],
+            'cursiv': ['Satisfy', 'cursive'],
+            'heading': ['Playfair Display', 'serif;']
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-----------------------------------header start------------------------ -->
+  <header class="absolute z-50 w-full px-3 py-5 border-b-2 border-white border-opacity-10 ">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap items-center justify-between">
+        <div class="btn">
+          <a href="" class="px-10 py-4 text-white bg-primary ">Book A Trip</a>
+        </div>
+        <ul class="flex flex-wrap items-center space-x-6 font-semibold text-black menu">
+
+          <li class="relative group"><a href="index.html">HOME+</a>
+
+            <ul class="absolute invisible block px-8 py-2 text-black bg-white nav-dropdown group-hover:visible">
+              <li class="p-2 border-b "><a href=""> CLASSIC</a></li>
+              <li class="p-2 border-b"><a href=""> DARK</a></li>
+              <li class="p-2"><a href=""> PARALLAX</a></li>
+            </ul>
+
+          </li>
+          <li class="relative group"><a href="javascript:void(0);">PAGES+</a>
+            <ul class="absolute invisible block px-8 py-2 text-black bg-white nav-dropdown group-hover:visible">
+              <li class="p-2 border-b "><a href="">About</a></li>
+              <li class="p-2 border-b"><a href="">Destinations</a></li>
+              <li class="p-2 border-b "><a href="">About</a></li>
+              <li class="p-2 border-b"><a href="">Destinations</a></li>
+              <li class="p-2"><a href="">Details</a></li>
+
+            </ul>
+          </li>
+          <li class="relative group"><a href="javascript:void(0);">DESTINATION+</a>
+            <ul class="absolute invisible block px-8 py-2 text-black bg-white nav-dropdown group-hover:visible">
+              <li class="p-2 border-b "><a href="">New York</a></li>
+              <li class="p-2 border-b"><a href="">Dubai</a></li>
+              <li class="p-2"><a href=""></a>London</li>
+            </ul>
+          </li>
+          <li><a href="index.html"><img src="asset/images/logo (1).png"></a></li>
+          <li><a href="javascript:void(0);">BLOGS+</a></li>
+          <li><a href="javascript:void(0);">PACKAGES+</a></li>
+          <li><a href="javascript:void(0);">CONTACT</a></li>
+        </ul>
+        <div class="icon">
+          <ul class="flex flex-wrap items-center space-x-4 font-semibold text-black">
+            <li><a href=""><i class="fa-solid fa-bag-shopping"></i>Cart(0)</a></li>
+            <li class="p-3 rounded-full bg-primary"><a href=""><i class="fa-regular fa-user"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!----------------------------- header end------------------------------------------- -->
+  <!--------------------- main-banner start-------------------- -->
+  <!-- <section class="flex flex-wrap items-center justify-center h-screen main-banner bg-blend-multiply "
+    style="background: rgba(0,0,0,0.4) url(asset/images/h4.webp);">
+    <div class="container mx-auto">
+      <div class="text-center text-white banner-content font-jost">
+        <h1 class="font-semibold text-transparent text-7xl hero-glow-text">Find Next Place To Visit.</h1>
+        <p class="text-2xl pt-4 leading-1.7">Lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit.<br> Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the
+        </p>
+      </div>
+      <form action="" class="relative py-4 text-center ">
+
+        <input type="text" placeholder="Where To?"
+          class="px-16 py-4 text-lg text-orange-500 bg-transparent border-2 border-orange-500 outline-none">
+        <div class="absolute location top-9 left-72">
+          <i class="text-orange-500 fa-solid fa-location-dot"></i>
+        </div>
+        <input type="date"
+          class="px-16 py-4 text-lg text-orange-500 bg-transparent border-2 border-orange-500 outline-none font-jost"
+          id="">
+        <span class="section">
+          <input type="select" class="px-16 py-4 bg-transparent border-2 border-orange-500 outline-none font-jost">
+        </span>
+        <button class="px-8 py-4 text-lg bg-primary font-jost">Find Now</button>
+
+      </form>
+    </div>
+  </section> -->
+
+
+
+  <section class="flex flex-wrap items-center justify-center h-screen main-banner bg-blend-multiply "
+    style="background: rgba(0,0,0,0.4) url(./asset/images/h4.webp);">
+    <div class="container mx-auto">
+      <div class="text-center text-white banner-content font-jost">
+        <h1 class="font-semibold text-transparent text-7xl hero-glow-text">Find Next Place To Visit.</h1>
+        <p class="text-2xl pt-4 leading-1.7">Lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit.<br> Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the
+        </p>
+      </div>
+      <form action="" class="relative py-4 text-center ">
+
+        <input type="text" placeholder="Where To?"
+          class="w-3/12 px-16 py-4 mr-4 text-lg bg-transparent border-2 outline-none text-primary border-primary">
+        <div class="absolute location top-9 left-52">
+          <i class="text-orange-500 fa-solid fa-location-dot "></i>
+        </div>
+        <input type="text" placeholder="09/19/2023-09/19/2023"
+          class="w-3/12 px-8 py-4 mr-4 text-lg bg-transparent border-2 outline-none text-primary font-jost border-primary"
+          id="">
+        <span class="relative w-3/12 section "><i
+            class="fa-solid fa-person-walking absolute text-primary top-1/2 translate-y-[-50%] left-6"></i>
+          <select id="Tour Type"
+            class="px-16 py-4 mr-4 bg-transparent border-2 outline-none font-jost text-primary border-primary ">
+            <option selected>Tour Type</option>
+            <option value="US">HoneMoon</option>
+            <option value="US">HoneMoon</option>
+            <option value="US">HoneMoon</option>
+            <option value="US">Hill Tracking</option>
+          </select>
+        </span>
+        <button class="px-8 py-4 text-lg text-white bg-primary font-jost">Find Now</button>
+
+      </form>
+    </div>
+  </section>
+  <!--  -->
+
+
+  <!-- travel start -->
+  <!-- <section class="py-32 travel">
+    <div class="container mx-auto">
+      <div class="title">
+        <h2 class="text-2xl text-orange-400 font-dd">Travel Category</h2>
+        <span class="text-5xl font-dd">Our Popular Tours Type</span>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-1.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="">Explore Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-2.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="">Explore Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-3.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="">Explore Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-2.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="">Explore Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    </div>
+
+  </section> -->
+
+  <section class="py-32 travel">
+    <div class="container mx-auto">
+      <div class="mb-10 title">
+        <h2 class="text-2xl text-orange-400 font-cursiv">Travel Category</h2>
+        <span class="text-5xl font-heading">Our Popular Tours Type</span>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-1.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl font-semibold hover:text-primary">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="" class="text-xl font-bold">Explore Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-2.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl font-semibold hover:text-primary">Cusco & Salkantay Trekking to Machu Picchu</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="" class="text-xl font-bold">Explore Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-3.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl font-semibold hover:text-primary">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="" class="text-xl font-bold">Explore Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="c_img">
+                <img src="asset/images/p3-2.webp" class="w-full max-w-full">
+              </div>
+              <h3 class="pt-4 text-3xl">Family Tours of Taj Mahal
+                New Delhi India</h3>
+              <ul class="py-5 columns-3">
+                <li><span>05 People</span></li>
+                <li><span>03 Days</span></li>
+                <li><span>From <strong class="text-orange-400">$250</strong></span></li>
+              </ul>
+              <a href="" class="text-xl font-bold">Explore Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!--  -->
+  <!-- <section>
+    <div class="mt-10 bg-orange-100 ">
+      <div class="container mx-auto">
+
+        <h5 class="pt-5 italic text-center text-orange-500">Expolre Our tours</h5>
+        <h2 class="pt-2 text-3xl text-center">Top Attractions Destinations</h2>
+
+        <div class="flex flex-wrap justify-center mt-10">
+          <div class="px-8 card1 ">
+            <div class="bg-white img">
+              <img src="asset/images/m-1.png" class="p-7">
+            </div>
+            <h2 class="text-center">Beauty of France</h2>
+            <p class="text-center text-orange-500">10 Tours Place</p>
+          </div>
+
+          <div class="px-8 card1 ">
+            <div class="bg-white img">
+              <img src="asset/images/m-2.png" class="p-7">
+            </div>
+            <h2 class="text-center">Beauty of France</h2>
+            <p class="text-center text-orange-500">10 Tours Place</p>
+          </div>
+
+          <div class="px-8 card1 ">
+            <div class="bg-white img">
+              <img src="asset/images/m-1.png" class="p-7">
+            </div>
+            <h2 class="text-center">Beauty of France</h2>
+            <p class="text-center text-orange-500">10 Tours Place</p>
+          </div>
+          <div class="px-8 card1 ">
+            <div class="bg-white img">
+              <img src="asset/images/m-2.png" class="p-7">
+            </div>
+            <h2 class="text-center">Beauty of France</h2>
+            <p class="text-center text-orange-500">10 Tours Place</p>
+          </div>
+          <div class="px-8 card1 ">
+            <div class="bg-white img">
+              <img src="asset/images/m-1.png" class="p-7">
+            </div>
+            <h2 class="text-center">Beauty of France</h2>
+            <p class="text-center text-orange-500">10 Tours Place</p>
+          </div>
+        </div>
+        <div class="p-10 text-center btn">
+          <button class="py-3 mt-5 bg-orange-500 px-14 ">View All</button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="py-32 exlpore bg-theme">
+    <div class="container mx-auto pt-30">
+      <div class="destination ">
+        <div class="text-center explore-hading font-jost mb-9">
+          <h5 class="text-2xl font-cursiv text-primary ">Explore Our Tours</h5>
+          <h2 class="text-5xl font-bold">Top Attractions Destinations</h2>
+        </div>
+        <div class="flex px-20 gap-x-8">
+          <div class="w-1/5 country-map">
+            <div class="map-img bg-white flex justify-center items-center px-6 py-8 lg:min-h-[200px]">
+              <img class="" src="asset/images/m-1.png">
+            </div>
+            <h5 class="text-center lg:text-[22px] font-jost text-md font-medium text-dark-1 leading-1.6 lg:mt-7 mt-5">
+              Beauty of France</h5>
+            <p class="mt-2 text-sm font-medium text-center text-orange-500 lg:text-md text-secondary-1 font-jost">
+              10 Tours Place</p>
+          </div>
+          <div class="w-1/5 country-map">
+            <div class="map-img bg-white flex justify-center items-center px-6 py-8 lg:min-h-[200px]">
+              <img class="" src="asset/images/m-2.png">
+            </div>
+            <h5 class="text-center lg:text-[22px] font-jost text-md font-medium text-dark-1 leading-1.6 lg:mt-7 mt-5">
+              Beauty of France</h5>
+            <p class="mt-2 text-sm font-medium text-center text-orange-500 lg:text-md text-secondary-1 font-jost">
+              10 Tours Place</p>
+          </div>
+          <div class="w-1/5 country-map">
+            <div class="map-img bg-white flex justify-center items-center px-6 py-8 lg:min-h-[200px]">
+              <img class="" src="asset/images/m-2 (1).png">
+            </div>
+            <h5 class="text-center lg:text-[22px] font-jost text-md font-medium text-dark-1 leading-1.6 lg:mt-7 mt-5">
+              Beauty of France</h5>
+            <p class="mt-2 text-sm font-medium text-center text-orange-500 lg:text-md text-secondary-1 font-jost">
+              10 Tours Place</p>
+          </div>
+          <div class="w-1/5 country-map">
+            <div class="map-img bg-white flex justify-center items-center px-6 py-8 lg:min-h-[200px]">
+              <img class="" src="asset/images/m-2 (3).png">
+            </div>
+            <h5 class="text-center lg:text-[22px] font-jost text-md font-medium text-dark-1 leading-1.6 lg:mt-7 mt-5">
+              Beauty of France</h5>
+            <p class="mt-2 text-sm font-medium text-center text-orange-500 lg:text-md text-secondary-1 font-jost">
+              10 Tours Place</p>
+          </div>
+          <div class="w-1/5 country-map">
+            <div class="map-img bg-white flex justify-center items-center px-6 py-8 lg:min-h-[200px]">
+              <img class="" src="asset/images/m-2 (4).png">
+            </div>
+            <h5 class="text-center lg:text-[22px] font-jost text-md font-medium text-dark-1 leading-1.6 lg:mt-7 mt-5">
+              Beauty of France</h5>
+            <p class="mt-2 text-sm font-medium text-center text-orange-500 lg:text-md text-secondary-1 font-jost">
+              10 Tours Place</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center expo-btn mt-9">
+        <button class="px-10 py-4 text-lg text-white bg-primary font-jost">View All<i
+            class="px-2 fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section>
+    <div class="container mx-auto ">
+
+      <div class="p-20 title">
+        <h2 class="text-2xl italic text-center text-orange-500">Why Choose Us</h2>
+        <p class="text-5xl font-bold text-center border-4-black">Why Travel with Arid?</p>
+      </div>
+
+      <div class="flex flex-wrap px-40">
+
+        <div class="w-1/3 p-2 text-center card1">
+          <div class="inline text-center s_img">
+            <img class="inline text-center " src="asset/images/ill-care.png">
+          </div>
+          <h2 class="p-4 text-3xl text-center">Best Price Granted</h2>
+          <p class="p-2 text-xl text-center"></p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. sed do
+          eiusmod
+          incididunt.</p>
+        </div>
+
+        <div class="w-1/3 p-2 text-center card1">
+          <div class="inline text-center s_img">
+            <img class="inline text-center " src="asset/images/ill-guide.png">
+          </div>
+          <h2 class="p-4 text-3xl text-center">Best Travel Guide</h2>
+          <p class="p-2 text-xl text-center"></p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. sed do
+          eiusmod
+          incididunt.</p>
+        </div>
+
+        <div class="w-1/3 p-2 text-center card1">
+          <div class="inline text-center s_img">
+            <img class="inline text-center " src="asset/images/ill-price.png">
+          </div>
+          <h2 class="p-4 text-3xl text-center">Customer Care 24/7</h2>
+          <p class="p-2 text-xl text-center"></p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. sed do
+          eiusmod
+          incididunt.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- video banner start -->
+  <div class="mt-5 video-banner ">
+    <div class="flex flex-col flex-wrap items-center justify-center w-screen py-32 bg-no-repeat v-img "
+      style="background-image:url(./asset/images/video-banner.webp);">
+      <h2 class="px-2 py-5 text-4xl font-bold text-center text-white">Views trip latest shots</h2>
+      <p class="text-xl font-medium text-center text-white">Mlor sit amet, consectetur adipiscing elit. Arcu at viverra
+        eget
+        porttitor condimentum nisl pool. placeholder</p>
+      <div class="p-5 text-center v-play">
+        <a href="https://www.youtube.com/watch?v=vJoNqBZ9QlM" class="text-center ">
+          <img class="inline " src="asset/images/video-circle.svg" alt="">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- partner style start -->
+
+
+
+  <div class="pt-32 partner">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap justify-around px-20">
+        <div class="w-2/12 text-center shadow-2 ">
+          <div class="px-5 py-5 partner1">
+            <img class="" src="asset/images/p2-1.png">
+          </div>
+        </div>
+        <div class="w-2/12 text-center shadow-2 ">
+          <div class="px-5 py-5 text-center partner1">
+            <img src="asset/images/p2-2.png">
+          </div>
+        </div>
+        <div class="w-2/12 text-center shadow-2">
+          <div class="px-5 py-5 partner1">
+            <img src="asset/images/p2-3.png">
+          </div>
+        </div>
+        <div class="w-2/12 text-center shadow-2">
+          <div class="px-5 py-5 partner1">
+            <img src="asset/images/p2-4.png">
+          </div>
+        </div>
+        <div class="w-2/12 text-center shadow-2">
+          <div class="px-5 py-5 partner1">
+            <img src="asset/images/p2-5.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="pt-32 package">
+    <div class="container mx-auto">
+      <div class="pb-10 text-center package-content">
+        <h5 class="pb-3 text-2xl text-primary font-cursiv">Explore Our Tours</h5>
+        <h2 class="pb-3 text-5xl font-heading">New and Most Popular Tours</h2>
+      </div>
+      <div class="package-details ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-base">
+          <div class="relative overflow-hidden group wow fadeInUp">
+            <img class="w-full duration-300 group-hover:scale-105" src="asset/images/p4-1.webp">
+            <div
+              class="absolute w-full left-0 bottom-0 bg-gradient-to-t from-dark-1 lg:py-[32px] py-6 lg:px-base px-6 text-white">
+              <div class="flex">
+                <ul class="flex flex-wrap">
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+
+                </ul>
+                <span class="ml-3">10 Review</span>
+              </div>
+              <h4 class="text-2xl font-medium duration-200 font-jost hover:text-primary">A tour of the
+                Amazon Forest.</h4>
+              <ul class="flex mt-2">
+                <li><a href="">03 days</a></li>
+                <li><a href="">/ From $2500</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+
+          <div class="relative overflow-hidden group wow fadeInUp">
+            <img class="w-full duration-300 group-hover:scale-105" src="asset/images/p4-2.webp">
+            <div
+              class=" absolute w-full left-0 bottom-0 bg-gradient-to-t from-dark-1 lg:py-[32px] py-6 lg:px-base px-6 text-white">
+              <div class="flex">
+                <ul class="flex flex-wrap">
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+
+                </ul>
+                <span class="ml-3">10 Review</span>
+              </div>
+              <h4 class="text-2xl font-medium duration-200 font-jost hover:text-primary">New York, City
+                Tours.</h4>
+              <ul class="flex mt-2">
+                <li><a href="">03 days</a></li>
+                <li><a href="">/ From $2500</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden group wow fadeInUp">
+            <img class="w-full duration-300 group-hover:scale-105" src="asset/images/p4-3.webp">
+            <div
+              class=" absolute w-full left-0 bottom-0 bg-gradient-to-t from-dark-1 lg:py-[32px] py-6 lg:px-base px-6 text-white">
+              <div class="flex">
+                <ul class="flex flex-wrap">
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+                  <li><a href=""><i class="p-1 text-xs fa-solid fa-star"></i></a></li>
+
+                </ul>
+                <span class="ml-3">10 Review</span>
+              </div>
+              <h4 class="text-2xl font-semibold duration-200 font-jost hover:text-primary">Epcot Center
+                Drive, Orlando.</h4>
+              <ul class="flex mt-2 font-semibold">
+                <li><a href="">03 days</a></li>
+                <li><a href="">/ From $2500</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- testimonial start -->
+
+  <section class="py-32 testimonial">
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next"
+            style="width: 1016px; margin: auto;">
+            <div class="grid items-center grid-cols-12 gap-6">
+              <div class="order-2 col-span-12 text-center lg:col-span-4 lg:order-1">
+                <div class="lg:max-w-[200px] max-w-[80px] mx-auto">
+                  <img src="asset/images/testi-3.webp">
+                </div>
+                <h5 class="mt-4 font-semibold lg:text-lg text-2md text-dark-1">Elenar Pena</h5>
+                <p class="mt-1 text-dark-2">Director of Creative Solution</p>
+              </div>
+              <div class="order-1 col-span-12 lg:col-span-8 lg:order-2">
+                <div>
+                  <div class="mb-4 lg:mb-6">
+                    <svg class="lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.714 26.8074C21.8987 26.8074 20.2813 25.9812 18.85 24.3176C17.4188 22.6651 16.709 20.4768 16.709 17.7525C16.709 15.4413 18.0122 11.902 20.6071 7.14565C23.2136 2.37816 25.1452 7.37518e-07 26.4135 8.484e-07C27.1234 9.10453e-07 27.4841 0.35728 27.4841 1.06068C27.4841 1.25049 26.7394 2.79128 25.2616 5.6942C23.7721 8.59713 23.0391 10.8748 23.0391 12.5049C23.0391 13.7666 23.8769 14.8049 25.5641 15.6088C27.2397 16.4127 28.3684 17.2501 28.9269 18.1209C29.4855 18.9918 29.7647 19.9408 29.7647 20.9457C29.7647 22.7656 29.2062 24.2059 28.0891 25.2443C26.9372 26.2826 25.4943 26.8074 23.714 26.8074Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M7.00493 26.8074C5.1897 26.8074 3.56064 25.9812 2.14104 24.3176C0.709797 22.6651 -1.79014e-06 20.4768 -1.55197e-06 17.7525C-1.34992e-06 15.4413 1.30324 11.902 3.89809 7.14565C6.49295 2.37816 8.43617 7.37514e-07 9.69287 8.47378e-07C10.4027 9.09431e-07 10.7634 0.35728 10.7634 1.06068C10.7634 1.25049 10.0187 2.79128 8.54091 5.6942C7.05149 8.59713 6.31841 10.8748 6.31841 12.5049C6.31841 13.7666 7.15621 14.8049 8.84344 15.6088C10.519 16.4127 11.6477 17.2501 12.2063 18.1209C12.7648 18.9918 13.0441 19.9408 13.0441 20.9457C13.0441 22.7656 12.4855 24.2059 11.3685 25.2443C10.2514 26.2826 8.78526 26.8074 7.00493 26.8074Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                  <p class="text-dark-2 lg:text-[25px] text-2md italic leading-[1.8] font-serif font-normal">
+                    Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas
+                    suscipit tellus
+                    sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia
+                    condimentum.
+                    Donec placerat, orci.
+                  </p>
+                  <div class="text-end">
+                    <svg class="ml-auto lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.05119 0.000241621C7.86642 0.00024178 9.48384 0.826454 10.9151 2.49005C12.3463 4.14249 13.0562 6.33085 13.0562 9.05513C13.0562 11.3663 11.7529 14.9056 9.15803 19.662C6.55154 24.4295 4.61993 26.8076 3.35159 26.8076C2.64178 26.8076 2.28106 26.4503 2.28106 25.7469C2.28106 25.5571 3.02578 24.0163 4.50357 21.1134C5.993 18.2105 6.72608 15.9328 6.72608 14.3027C6.72608 13.0411 5.88828 12.0027 4.20104 11.1988C2.52543 10.3949 1.39673 9.55756 0.838193 8.68668C0.279657 7.8158 0.000388935 6.86677 0.000389023 5.86191C0.000389182 4.042 0.558927 2.6017 1.676 1.56335C2.82798 0.524995 4.27085 0.000241465 6.05119 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M22.7602 0.000241621C24.5754 0.00024178 26.2045 0.826454 27.6241 2.49005C29.0553 4.14249 29.7651 6.33085 29.7651 9.05513C29.7651 11.3663 28.4619 14.9056 25.867 19.662C23.2722 24.4295 21.329 26.8076 20.0723 26.8076C19.3625 26.8076 19.0017 26.4503 19.0017 25.7469C19.0017 25.5571 19.7464 24.0163 21.2242 21.1134C22.7136 18.2105 23.4467 15.9328 23.4467 14.3027C23.4467 13.0411 22.6089 12.0027 20.9217 11.1988C19.2461 10.3949 18.1174 9.55756 17.5589 8.68668C17.0003 7.8158 16.7211 6.86677 16.7211 5.86191C16.7211 4.042 17.2796 2.6017 18.3967 1.56335C19.5137 0.524995 20.9799 0.000241465 22.7602 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-active" style="width: 1016px; margin: auto;">
+            <div class="grid items-center grid-cols-12 gap-6">
+              <div class="order-2 col-span-12 text-center lg:col-span-4 lg:order-1">
+                <div class="lg:max-w-[200px] max-w-[80px] mx-auto">
+                  <img src="asset/images/testi-3.webp">
+                </div>
+                <h5 class="mt-4 font-semibold lg:text-lg text-2md text-dark-1">Elenar Pena</h5>
+                <p class="mt-1 text-dark-2">Director of Creative Solution</p>
+              </div>
+              <div class="order-1 col-span-12 lg:col-span-8 lg:order-2">
+                <div>
+                  <div class="mb-4 lg:mb-6">
+                    <svg class="lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.714 26.8074C21.8987 26.8074 20.2813 25.9812 18.85 24.3176C17.4188 22.6651 16.709 20.4768 16.709 17.7525C16.709 15.4413 18.0122 11.902 20.6071 7.14565C23.2136 2.37816 25.1452 7.37518e-07 26.4135 8.484e-07C27.1234 9.10453e-07 27.4841 0.35728 27.4841 1.06068C27.4841 1.25049 26.7394 2.79128 25.2616 5.6942C23.7721 8.59713 23.0391 10.8748 23.0391 12.5049C23.0391 13.7666 23.8769 14.8049 25.5641 15.6088C27.2397 16.4127 28.3684 17.2501 28.9269 18.1209C29.4855 18.9918 29.7647 19.9408 29.7647 20.9457C29.7647 22.7656 29.2062 24.2059 28.0891 25.2443C26.9372 26.2826 25.4943 26.8074 23.714 26.8074Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M7.00493 26.8074C5.1897 26.8074 3.56064 25.9812 2.14104 24.3176C0.709797 22.6651 -1.79014e-06 20.4768 -1.55197e-06 17.7525C-1.34992e-06 15.4413 1.30324 11.902 3.89809 7.14565C6.49295 2.37816 8.43617 7.37514e-07 9.69287 8.47378e-07C10.4027 9.09431e-07 10.7634 0.35728 10.7634 1.06068C10.7634 1.25049 10.0187 2.79128 8.54091 5.6942C7.05149 8.59713 6.31841 10.8748 6.31841 12.5049C6.31841 13.7666 7.15621 14.8049 8.84344 15.6088C10.519 16.4127 11.6477 17.2501 12.2063 18.1209C12.7648 18.9918 13.0441 19.9408 13.0441 20.9457C13.0441 22.7656 12.4855 24.2059 11.3685 25.2443C10.2514 26.2826 8.78526 26.8074 7.00493 26.8074Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                  <p class="text-dark-2 lg:text-[25px] text-2md italic leading-[1.8] font-serif font-normal">
+                    Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas
+                    suscipit tellus
+                    sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia
+                    condimentum.
+                    Donec placerat, orci.
+                  </p>
+                  <div class="text-end">
+                    <svg class="ml-auto lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.05119 0.000241621C7.86642 0.00024178 9.48384 0.826454 10.9151 2.49005C12.3463 4.14249 13.0562 6.33085 13.0562 9.05513C13.0562 11.3663 11.7529 14.9056 9.15803 19.662C6.55154 24.4295 4.61993 26.8076 3.35159 26.8076C2.64178 26.8076 2.28106 26.4503 2.28106 25.7469C2.28106 25.5571 3.02578 24.0163 4.50357 21.1134C5.993 18.2105 6.72608 15.9328 6.72608 14.3027C6.72608 13.0411 5.88828 12.0027 4.20104 11.1988C2.52543 10.3949 1.39673 9.55756 0.838193 8.68668C0.279657 7.8158 0.000388935 6.86677 0.000389023 5.86191C0.000389182 4.042 0.558927 2.6017 1.676 1.56335C2.82798 0.524995 4.27085 0.000241465 6.05119 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M22.7602 0.000241621C24.5754 0.00024178 26.2045 0.826454 27.6241 2.49005C29.0553 4.14249 29.7651 6.33085 29.7651 9.05513C29.7651 11.3663 28.4619 14.9056 25.867 19.662C23.2722 24.4295 21.329 26.8076 20.0723 26.8076C19.3625 26.8076 19.0017 26.4503 19.0017 25.7469C19.0017 25.5571 19.7464 24.0163 21.2242 21.1134C22.7136 18.2105 23.4467 15.9328 23.4467 14.3027C23.4467 13.0411 22.6089 12.0027 20.9217 11.1988C19.2461 10.3949 18.1174 9.55756 17.5589 8.68668C17.0003 7.8158 16.7211 6.86677 16.7211 5.86191C16.7211 4.042 17.2796 2.6017 18.3967 1.56335C19.5137 0.524995 20.9799 0.000241465 22.7602 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev" style="width: 1016px; margin: auto;">
+            <div class="grid items-center grid-cols-12 gap-6">
+              <div class="order-2 col-span-12 text-center lg:col-span-4 lg:order-1">
+                <div class="lg:max-w-[200px] max-w-[80px] mx-auto">
+                  <img src="asset/images/testi-3.webp">
+                </div>
+                <h5 class="mt-4 font-semibold lg:text-lg text-2md text-dark-1">Elenar Pena</h5>
+                <p class="mt-1 text-dark-2">Director of Creative Solution</p>
+              </div>
+              <div class="order-1 col-span-12 lg:col-span-8 lg:order-2">
+                <div>
+                  <div class="mb-4 lg:mb-6">
+                    <svg class="lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.714 26.8074C21.8987 26.8074 20.2813 25.9812 18.85 24.3176C17.4188 22.6651 16.709 20.4768 16.709 17.7525C16.709 15.4413 18.0122 11.902 20.6071 7.14565C23.2136 2.37816 25.1452 7.37518e-07 26.4135 8.484e-07C27.1234 9.10453e-07 27.4841 0.35728 27.4841 1.06068C27.4841 1.25049 26.7394 2.79128 25.2616 5.6942C23.7721 8.59713 23.0391 10.8748 23.0391 12.5049C23.0391 13.7666 23.8769 14.8049 25.5641 15.6088C27.2397 16.4127 28.3684 17.2501 28.9269 18.1209C29.4855 18.9918 29.7647 19.9408 29.7647 20.9457C29.7647 22.7656 29.2062 24.2059 28.0891 25.2443C26.9372 26.2826 25.4943 26.8074 23.714 26.8074Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M7.00493 26.8074C5.1897 26.8074 3.56064 25.9812 2.14104 24.3176C0.709797 22.6651 -1.79014e-06 20.4768 -1.55197e-06 17.7525C-1.34992e-06 15.4413 1.30324 11.902 3.89809 7.14565C6.49295 2.37816 8.43617 7.37514e-07 9.69287 8.47378e-07C10.4027 9.09431e-07 10.7634 0.35728 10.7634 1.06068C10.7634 1.25049 10.0187 2.79128 8.54091 5.6942C7.05149 8.59713 6.31841 10.8748 6.31841 12.5049C6.31841 13.7666 7.15621 14.8049 8.84344 15.6088C10.519 16.4127 11.6477 17.2501 12.2063 18.1209C12.7648 18.9918 13.0441 19.9408 13.0441 20.9457C13.0441 22.7656 12.4855 24.2059 11.3685 25.2443C10.2514 26.2826 8.78526 26.8074 7.00493 26.8074Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                  <p class="text-dark-2 lg:text-[25px] text-2md italic leading-[1.8] font-serif font-normal">
+                    Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas
+                    suscipit
+                    tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia
+                    condimentum. Donec placerat, orci.
+                  </p>
+                  <div class="text-end">
+                    <svg class="ml-auto lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.05119 0.000241621C7.86642 0.00024178 9.48384 0.826454 10.9151 2.49005C12.3463 4.14249 13.0562 6.33085 13.0562 9.05513C13.0562 11.3663 11.7529 14.9056 9.15803 19.662C6.55154 24.4295 4.61993 26.8076 3.35159 26.8076C2.64178 26.8076 2.28106 26.4503 2.28106 25.7469C2.28106 25.5571 3.02578 24.0163 4.50357 21.1134C5.993 18.2105 6.72608 15.9328 6.72608 14.3027C6.72608 13.0411 5.88828 12.0027 4.20104 11.1988C2.52543 10.3949 1.39673 9.55756 0.838193 8.68668C0.279657 7.8158 0.000388935 6.86677 0.000389023 5.86191C0.000389182 4.042 0.558927 2.6017 1.676 1.56335C2.82798 0.524995 4.27085 0.000241465 6.05119 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M22.7602 0.000241621C24.5754 0.00024178 26.2045 0.826454 27.6241 2.49005C29.0553 4.14249 29.7651 6.33085 29.7651 9.05513C29.7651 11.3663 28.4619 14.9056 25.867 19.662C23.2722 24.4295 21.329 26.8076 20.0723 26.8076C19.3625 26.8076 19.0017 26.4503 19.0017 25.7469C19.0017 25.5571 19.7464 24.0163 21.2242 21.1134C22.7136 18.2105 23.4467 15.9328 23.4467 14.3027C23.4467 13.0411 22.6089 12.0027 20.9217 11.1988C19.2461 10.3949 18.1174 9.55756 17.5589 8.68668C17.0003 7.8158 16.7211 6.86677 16.7211 5.86191C16.7211 4.042 17.2796 2.6017 18.3967 1.56335C19.5137 0.524995 20.9799 0.000241465 22.7602 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+            style="width: 1016px; margin: auto;">
+            <div class="grid items-center grid-cols-12 gap-6">
+              <div class="order-2 col-span-12 text-center lg:col-span-4 lg:order-1">
+                <div class="lg:max-w-[200px] max-w-[80px] mx-auto">
+                  <img src="asset/images/testi-3.webp">
+                </div>
+                <h5 class="mt-4 font-semibold lg:text-lg text-2md text-dark-1">Elenar Pena</h5>
+                <p class="mt-1 text-dark-2">Director of Creative Solution</p>
+              </div>
+              <div class="order-1 col-span-12 lg:col-span-8 lg:order-2">
+                <div>
+                  <div class="mb-4 lg:mb-6">
+                    <svg class="lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.714 26.8074C21.8987 26.8074 20.2813 25.9812 18.85 24.3176C17.4188 22.6651 16.709 20.4768 16.709 17.7525C16.709 15.4413 18.0122 11.902 20.6071 7.14565C23.2136 2.37816 25.1452 7.37518e-07 26.4135 8.484e-07C27.1234 9.10453e-07 27.4841 0.35728 27.4841 1.06068C27.4841 1.25049 26.7394 2.79128 25.2616 5.6942C23.7721 8.59713 23.0391 10.8748 23.0391 12.5049C23.0391 13.7666 23.8769 14.8049 25.5641 15.6088C27.2397 16.4127 28.3684 17.2501 28.9269 18.1209C29.4855 18.9918 29.7647 19.9408 29.7647 20.9457C29.7647 22.7656 29.2062 24.2059 28.0891 25.2443C26.9372 26.2826 25.4943 26.8074 23.714 26.8074Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M7.00493 26.8074C5.1897 26.8074 3.56064 25.9812 2.14104 24.3176C0.709797 22.6651 -1.79014e-06 20.4768 -1.55197e-06 17.7525C-1.34992e-06 15.4413 1.30324 11.902 3.89809 7.14565C6.49295 2.37816 8.43617 7.37514e-07 9.69287 8.47378e-07C10.4027 9.09431e-07 10.7634 0.35728 10.7634 1.06068C10.7634 1.25049 10.0187 2.79128 8.54091 5.6942C7.05149 8.59713 6.31841 10.8748 6.31841 12.5049C6.31841 13.7666 7.15621 14.8049 8.84344 15.6088C10.519 16.4127 11.6477 17.2501 12.2063 18.1209C12.7648 18.9918 13.0441 19.9408 13.0441 20.9457C13.0441 22.7656 12.4855 24.2059 11.3685 25.2443C10.2514 26.2826 8.78526 26.8074 7.00493 26.8074Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                  <p class="text-dark-2 lg:text-[25px] text-2md italic leading-[1.8] font-serif font-normal">
+                    Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas
+                    suscipit tellus
+                    sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia
+                    condimentum.
+                    Donec placerat, orci.
+                  </p>
+                  <div class="text-end">
+                    <svg class="ml-auto lg:max-w-[30px] max-w-[20px]" width="30" height="27" viewBox="0 0 30 27"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.05119 0.000241621C7.86642 0.00024178 9.48384 0.826454 10.9151 2.49005C12.3463 4.14249 13.0562 6.33085 13.0562 9.05513C13.0562 11.3663 11.7529 14.9056 9.15803 19.662C6.55154 24.4295 4.61993 26.8076 3.35159 26.8076C2.64178 26.8076 2.28106 26.4503 2.28106 25.7469C2.28106 25.5571 3.02578 24.0163 4.50357 21.1134C5.993 18.2105 6.72608 15.9328 6.72608 14.3027C6.72608 13.0411 5.88828 12.0027 4.20104 11.1988C2.52543 10.3949 1.39673 9.55756 0.838193 8.68668C0.279657 7.8158 0.000388935 6.86677 0.000389023 5.86191C0.000389182 4.042 0.558927 2.6017 1.676 1.56335C2.82798 0.524995 4.27085 0.000241465 6.05119 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                      <path
+                        d="M22.7602 0.000241621C24.5754 0.00024178 26.2045 0.826454 27.6241 2.49005C29.0553 4.14249 29.7651 6.33085 29.7651 9.05513C29.7651 11.3663 28.4619 14.9056 25.867 19.662C23.2722 24.4295 21.329 26.8076 20.0723 26.8076C19.3625 26.8076 19.0017 26.4503 19.0017 25.7469C19.0017 25.5571 19.7464 24.0163 21.2242 21.1134C22.7136 18.2105 23.4467 15.9328 23.4467 14.3027C23.4467 13.0411 22.6089 12.0027 20.9217 11.1988C19.2461 10.3949 18.1174 9.55756 17.5589 8.68668C17.0003 7.8158 16.7211 6.86677 16.7211 5.86191C16.7211 4.042 17.2796 2.6017 18.3967 1.56335C19.5137 0.524995 20.9799 0.000241465 22.7602 0.000241621Z"
+                        fill="#FF7C5B"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!--  -->
+  <div class="pt-32 travel-tips">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 shadow-custom">
+          <div class="t-card">
+            <div class="t-img ">
+              <img class="w-full px-1 py-1" src="asset/images/b3-1.webp">
+            </div>
+            <div class="py-6 bg-white travel-icon px-7">
+              <ul class="flex flex-wrap pb-4 font-jost">
+                <li class="pr-5 text-xl"><a href=""><i class="pr-2 fa-regular fa-user"></i>Jahid Hassan</a></li>
+                <li class="text-xl"><a href=""><i class="pr-2 fa-regular fa-clock"></i>8 Sep,2020</a></li>
+              </ul>
+              <h4 class="pb-3 text-4xl bold hover:text-orange-700 font-heading font-jost">Indulge in the purest forms of
+                body care with Soulflower!</h4>
+              <p class="pb-4 text-xl">Soulflower brings to you four new soaps with the most
+                unique ingredients to pamper...</p>
+              <div class="read-more font-jost text-primary">
+                <a href="" class="text-lg">Read More<i class="pl-2 fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 shadow-custom ">
+          <div class="overflow-hidden bg-white t-card shadow-custom-2 group wow fadeInRight"
+            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+            <div class="t-img ">
+              <img class="w-full px-1 py-1" src="asset/images/b3-2.webp">
+            </div>
+            <div class="py-6 bg-white travel-icon px-7">
+              <ul class="flex flex-wrap pb-4 font-jost">
+                <li class="pr-5 text-xl"><a href=""><i class="pr-2 fa-regular fa-user"></i>Jahid Hassan</a></li>
+                <li class="text-xl"><a href=""><i class="pr-2 fa-regular fa-clock"></i>8 Sep,2020</a></li>
+              </ul>
+              <h4 class="pb-3 text-4xl bold hover:text-orange-700 font-heading font-jost">Benefit from a 15% discount
+                mak your reservations.</h4>
+              <p class="pb-4 text-xl">Soulflower brings to you four new soaps with the most
+                unique ingredients to pamper...</p>
+              <div class="read-more font-jost text-primary">
+                <a href="" class="text-lg">Read More<i class="pl-2 fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- instagram feedback -->
+  <section class="insta-feed mt-14">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap justify-center gap-5">
+        <div class="relative i-img">
+          <img src="asset/images/insta-1.webp" alt="">
+          <!-- <a href="#" class="insta-feed-icon">
+        <i class="absolute fa-brands fa-instagram"></i>
+    </a> -->
+        </div>
+        <img src="asset/images/insta-2.webp" alt="">
+        <img src="asset/images/insta-3.webp" alt="">
+        <img src="asset/images/insta-4.webp" alt="">
+        <img src="asset/images/insta-5.webp" alt="">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="mt-5">
+    <div class="pt-20 overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover footer_style__one mt-17"
+      style="background: linear-gradient( rgba(8, 8, 11, .8) 100%, rgba(8, 8, 11, .8)100%), url('./asset/images/footer-bg-1.webp')">
+      <div class="container mx-auto px-28">
+        <div class="flex flex-wrap items-center justify-center lg:justify-between gap-7 pb-7">
+          <a href="#">
+            <img src="asset/images/logo-white.png">
+          </a>
+          <div class="flex flex-wrap justify-center align-middle lg:gap-x-9 gap-y-5 gap-x-7">
+            <a href="#" class="inline-flex items-center group">
+              <div class="social_icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h5 class="font-serif font-bold text-white lg:text-2md text-md">whatsapp </h5>
+            </a>
+            <a href="#" class="inline-flex items-center group">
+              <div class="social_icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <h5 class="font-serif font-bold text-white lg:text-2md text-md">Twitter</h5>
+            </a>
+            <a href="#" class="inline-flex items-center group">
+              <div class="social_icon">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+              <h5 class="font-serif font-bold text-white lg:text-2md text-md">Pinterest</h5>
+            </a>
+
+            <a href="#" class="inline-flex items-center group">
+              <div class="social_icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <h5 class="font-serif font-bold text-white lg:text-2md text-md">Instagram</h5>
+            </a>
+
+          </div>
+        </div>
+        <div class="grid pt-10 pb-12 lg:grid-cols-12 gap-7 lg:py-20 gradient-border-top">
+          <div class="col-span-12 text-center lg:col-span-4 lg:text-start">
+            <h3 class="text-white lg:text-[25px] text-2md  font-semibold leading-1.35">Newsletter</h3>
+            <form action="#" class="mt-5 md:max-w-[345px] max-w-[300px] lg:mx-0 mx-auto">
+              <div class="relative">
+                <input type="text"
+                  class="bg-[#0C0F13] bg-transparent h-12 py-3 pr-5 pl-12 outline-none border-stock-1 border border-opacity-40 w-full text-white text-sm placeholder:to-dark-5 focus:border-primary-2"
+                  placeholder="Email address">
+                <div class="absolute -translate-y-1/2 left-5 max-w-5 top-1/2">
+                  <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.2188 0.96875H0.78125C0.452832 0.96875 0.1875 1.23408 0.1875 1.5625V13.4375C0.1875 13.7659 0.452832 14.0312 0.78125 14.0312H16.2188C16.5472 14.0312 16.8125 13.7659 16.8125 13.4375V1.5625C16.8125 1.23408 16.5472 0.96875 16.2188 0.96875ZM15.4766 3.02461V12.6953H1.52344V3.02461L1.01133 2.62568L1.74053 1.68867L2.53467 2.30654H14.4672L15.2613 1.68867L15.9905 2.62568L15.4766 3.02461V3.02461ZM14.4672 2.30469L8.5 6.94336L2.53281 2.30469L1.73867 1.68682L1.00947 2.62383L1.52158 3.02275L7.85986 7.95088C8.04214 8.09249 8.26639 8.16936 8.49722 8.16936C8.72804 8.16936 8.95229 8.09249 9.13457 7.95088L15.4766 3.02461L15.9887 2.62568L15.2595 1.68867L14.4672 2.30469Z"
+                      fill="#EBEBEB"></path>
+                  </svg>
+                </div>
+              </div>
+              <button type="submit"
+                class="text-base text-white font-semibold bg-primary w-full mt-5 h-[50px] duration-300 ">Subscribe</button>
+            </form>
+
+            <a href="#"
+              class="inline-block bg-blue-600 text-base font-medium leading-1.3 text-white rounded-full mt-9 px-4 py-3">We
+              Are Hiring!</a>
+          </div>
+          <div
+            class="flex flex-wrap justify-center col-span-12 text-center lg:col-span-8 gap-base lg:flex-nowrap lg:text-start lg:justify-between lg:pl-8">
+            <div class="flex-grow">
+              <div class="mb-7">
+                <h3 class="text-white lg:text-[25px] text-2md font-semibold lg:leading-1.35">Navigation</h3>
+              </div>
+              <ul class="footer-link-list ">
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">About Company</a></li>
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">Online Query</a></li>
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">Become Partner</a></li>
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">Help &amp; Support</a></li>
+              </ul>
+            </div>
+            <div class="flex-grow">
+              <div class="mb-7">
+                <h3 class="text-white lg:text-[25px] text-2md font-semibold lg:leading-1.35">Destinations
+                </h3>
+              </div>
+
+              <ul class="footer-link-list">
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">Grand Switzerland</a></li>
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">Beauty of Paris</a></li>
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">United States</a></li>
+                <li class="py-3 text-xl text-white hover:text-primary font-jost"><a href="#"
+                    class="footer-nav-link">Wiesbaden Sea</a></li>
+              </ul>
+            </div>
+            <div class="max-w-[275px] flex-grow shrink-0 ">
+              <div class="mb-7">
+                <h3 class="text-white lg:text-[25px] text-2md font-semibold lg:leading-1.35">Contact Us</h3>
+              </div>
+
+              <ul>
+                <li
+                  class="flex items-center justify-end py-3 mt-5 text-xl text-white duration-200 font-jost first:mt-0 lg:justify-start text-stock-1 hover:text-primary">
+                  <div class="text-primary-1 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.9999 11.1917C11.4358 11.1917 12.5999 10.0276 12.5999 8.5917C12.5999 7.15576 11.4358 5.9917 9.9999 5.9917C8.56396 5.9917 7.3999 7.15576 7.3999 8.5917C7.3999 10.0276 8.56396 11.1917 9.9999 11.1917Z"
+                        stroke="#E8604C" stroke-width="1.5"></path>
+                      <path
+                        d="M3.01675 7.07484C4.65842 -0.141827 15.3501 -0.133494 16.9834 7.08317C17.9417 11.3165 15.3084 14.8998 13.0001 17.1165C11.3251 18.7332 8.67508 18.7332 6.99175 17.1165C4.69175 14.8998 2.05842 11.3082 3.01675 7.07484Z"
+                        stroke="currentColor" stroke-width="1.5"></path>
+                    </svg>
+                  </div>
+                  <a href="#" class="leading-1.5 pl-[10px] text-base ">3891 Ranchview Dr. Richardson,
+                    California 62639</a>
+                </li>
+                <li
+                  class="flex items-center justify-center py-3 mt-5 text-xl text-white duration-200 font-jost first:mt-0 lg:justify-start text-stock-1 hover:text-primary">
+                  <div class="text-primary-1 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18.3084 15.2748C18.3084 15.5748 18.2417 15.8832 18.1001 16.1832C17.9584 16.4832 17.7751 16.7665 17.5334 17.0332C17.1251 17.4832 16.6751 17.8082 16.1667 18.0165C15.6667 18.2248 15.1251 18.3332 14.5417 18.3332C13.6917 18.3332 12.7834 18.1332 11.8251 17.7248C10.8667 17.3165 9.90842 16.7665 8.95842 16.0748C8.00008 15.3748 7.09175 14.5998 6.22508 13.7415C5.36675 12.8748 4.59175 11.9665 3.90008 11.0165C3.21675 10.0665 2.66675 9.1165 2.26675 8.17484C1.86675 7.22484 1.66675 6.3165 1.66675 5.44984C1.66675 4.88317 1.76675 4.3415 1.96675 3.8415C2.16675 3.33317 2.48341 2.8665 2.92508 2.44984C3.45841 1.92484 4.04175 1.6665 4.65841 1.6665C4.89175 1.6665 5.12508 1.7165 5.33341 1.8165C5.55008 1.9165 5.74175 2.0665 5.89175 2.28317L7.82508 5.00817C7.97508 5.2165 8.08341 5.40817 8.15841 5.5915C8.23341 5.7665 8.27508 5.9415 8.27508 6.09984C8.27508 6.29984 8.21675 6.49984 8.10008 6.6915C7.99175 6.88317 7.83341 7.08317 7.63341 7.28317L7.00008 7.9415C6.90841 8.03317 6.86675 8.1415 6.86675 8.27484C6.86675 8.3415 6.87508 8.39984 6.89175 8.4665C6.91675 8.53317 6.94175 8.58317 6.95842 8.63317C7.10842 8.90817 7.36675 9.2665 7.73341 9.69984C8.10841 10.1332 8.50841 10.5748 8.94175 11.0165C9.39175 11.4582 9.82508 11.8665 10.2667 12.2415C10.7001 12.6082 11.0584 12.8582 11.3417 13.0082C11.3834 13.0248 11.4334 13.0498 11.4917 13.0748C11.5584 13.0998 11.6251 13.1082 11.7001 13.1082C11.8417 13.1082 11.9501 13.0582 12.0417 12.9665L12.6751 12.3415C12.8834 12.1332 13.0834 11.9748 13.2751 11.8748C13.4667 11.7582 13.6584 11.6998 13.8667 11.6998C14.0251 11.6998 14.1917 11.7332 14.3751 11.8082C14.5584 11.8832 14.7501 11.9915 14.9584 12.1332L17.7167 14.0915C17.9334 14.2415 18.0834 14.4165 18.1751 14.6248C18.2584 14.8332 18.3084 15.0415 18.3084 15.2748Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+                      <path d="M13.5251 6.4749L16.4751 3.5249" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.4751 6.4749L13.5251 3.5249" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <a href="tel:+8801236985" class="leading-1.5 pl-[10px] text-base ">+88 0123 6985</a>
+                </li>
+                <li
+                  class="flex items-center justify-center py-3 mt-5 text-xl text-white duration-200 font-jost first:mt-0 lg:justify-start text-stock-1 hover:text-primary">
+                  <div class="text-primary-1 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.1667 17.0832H5.83341C3.33341 17.0832 1.66675 15.8332 1.66675 12.9165V7.08317C1.66675 4.1665 3.33341 2.9165 5.83341 2.9165H14.1667C16.6667 2.9165 18.3334 4.1665 18.3334 7.08317V12.9165C18.3334 15.8332 16.6667 17.0832 14.1667 17.0832Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                      <path d="M14.1666 7.5L11.5582 9.58333C10.6999 10.2667 9.29158 10.2667 8.43325 9.58333L5.83325 7.5"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <a href="mailto:example@gmail.com" class="leading-1.5 pl-[10px] text-base ">example@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative flex flex-wrap justify-center gap-4 text-white border-t-2 text-dark-6 lg:justify-between py-7">
+          <button id="scrollTop"
+            class="text-white flex justify-center items-center absolute left-1/2 -translate-x-1/2 top-0 w-[50px] h-[50px] rounded-full bg-primary -translate-y-1/2 duration-300 hover:bg-primary-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.92 15.0501L13.4 8.53014C12.63 7.76014 11.37 7.76014 10.6 8.53014L4.07996 15.0501"
+                stroke="currentColor" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <p class="text-white">© Arid 2019 | All rights reserved.</p>
+          <p><a href="about.html" class="text-white duration-200 hover:text-primary-1">Privacy Policy</a> | <a
+              href="about.html" class="text-white duration-200 hover:text-primary-1">Terms of Use</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="asset/js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if (scrollY > 100) {
+          $('header').addClass('top-0');
+          $('header').addClass('sticky');
+          $('header').addClass('bg-white');
+          $('header').addClass('ani');
+          $('.menu').addClass('text-black');
+
+        }
+        else {
+          $('header').removeClass('sticky');
+          $('header').removeClass('top-0');
+          $('header').removeClass('bg-white');
+          $('header').removeClass('text-black');
+          $('header').removeClass('ani1');
+
+        }
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
